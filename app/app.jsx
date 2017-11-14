@@ -1,19 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
-var objOne = {
-  name: 'David',
-  location: 'Calgary'
-}
+var EveCraft = require('EveCraft');
 
-var objTwo = {
-  age: 38,
-  ...objOne
-}
-
-console.log(objTwo);
+require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
-  <h1>Boilderplate app!</h1>,
+  <EveCraft/>,
   document.getElementById('app')
 );
